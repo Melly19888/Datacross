@@ -20,13 +20,13 @@ public class Umsatz implements ActionListener {
 	private JTextField Anteile;
 	private JTextField Aufschlag;
 	private JTextField Wolle;
-	private JTextField Büro;
+	private JTextField Buero;
 	private JTextField Kurzware;
 	private JTextField Aufschlag_Wolle;
-	private JTextField Aufschlag_Büro;
+	private JTextField Aufschlag_Buero;
 	private JTextField Aufschlag_Kurzware;
 	private JTextField Anteile_Wolle;
-	private JTextField Anteile_Büro;
+	private JTextField Anteile_Buero;
 	private JTextField Anteile_Kurzware;
 	private JTextField Ausgabe_Umsatz_Woche;
 	private JTextField Ausgaben_Umsatz_Monat;
@@ -41,23 +41,23 @@ public class Umsatz implements ActionListener {
 	private JTextField Umsatz_Kurz_Jahr;
 	private JTextField Umsatz_kurz_Mo;
 	private JTextField Umsatz_kurz_Wo;
-	private JTextField Umsatz_Büro_Woche;
-	private JTextField Umsatz_Büro_Monat;
-	private JTextField Umsatz_Büro_jahr;
+	private JTextField Umsatz_Buero_Woche;
+	private JTextField Umsatz_Buero_Monat;
+	private JTextField Umsatz_Buero_jahr;
 	private JTextField Ums_Mo_JA;
 	private JTextField Umsatz_Mo_WOL;
 	private JTextField Umsatz_Wo_WO;
 	private JTextField Verkauf_Kurzware;
 	private JTextField Einkauf_Kurzware;
 	private JTextField Gewinn_Kurzware;
-	private JTextField Verkauf_Büro;
+	private JTextField Verkauf_Buero;
 	private JTextField Einkauf_Buero;
 	private JTextField Gewinn_Buero;
 	private JTextField Verkauf_Wolle;
 	private JTextField Einkauf_Wolle;
 	private JTextField Gewinn_Wolle;
 	private JTextField Umsatz_Wo_Tag;
-	private JTextField Umsatz_Büro_Tag;
+	private JTextField Umsatz_Buero_Tag;
 	private JTextField Umsatz_Kurz_Tag;
 
 	/**
@@ -163,16 +163,16 @@ public class Umsatz implements ActionListener {
 		frmSollUmsatzRechner.getContentPane().add(Wolle);
 		Wolle.setColumns(10);
 
-		Büro = new JTextField();
-		Büro.setEditable(false);
-		Büro.setForeground(new Color(255, 255, 0));
-		Büro.setFont(new Font("Arial Black", Font.PLAIN, 16));
-		Büro.setBackground(new Color(255, 0, 255));
-		Büro.setHorizontalAlignment(SwingConstants.CENTER);
-		Büro.setText("B\u00FCromaterial");
-		Büro.setBounds(399, 85, 129, 25);
-		frmSollUmsatzRechner.getContentPane().add(Büro);
-		Büro.setColumns(10);
+		Buero = new JTextField();
+		Buero.setEditable(false);
+		Buero.setForeground(new Color(255, 255, 0));
+		Buero.setFont(new Font("Arial Black", Font.PLAIN, 16));
+		Buero.setBackground(new Color(255, 0, 255));
+		Buero.setHorizontalAlignment(SwingConstants.CENTER);
+		Buero.setText("B\u00FCromaterial");
+		Buero.setBounds(399, 85, 129, 25);
+		frmSollUmsatzRechner.getContentPane().add(Buero);
+		Buero.setColumns(10);
 
 		Kurzware = new JTextField();
 		Kurzware.setEditable(false);
@@ -193,13 +193,13 @@ public class Umsatz implements ActionListener {
 		frmSollUmsatzRechner.getContentPane().add(Aufschlag_Wolle);
 		Aufschlag_Wolle.setColumns(10);
 
-		Aufschlag_Büro = new JTextField();
-		Aufschlag_Büro.setHorizontalAlignment(SwingConstants.CENTER);
-		Aufschlag_Büro.setFont(new Font("Arial Black", Font.PLAIN, 16));
-		Aufschlag_Büro.setBackground(Color.GREEN);
-		Aufschlag_Büro.setBounds(538, 85, 105, 25);
-		frmSollUmsatzRechner.getContentPane().add(Aufschlag_Büro);
-		Aufschlag_Büro.setColumns(10);
+		Aufschlag_Buero = new JTextField();
+		Aufschlag_Buero.setHorizontalAlignment(SwingConstants.CENTER);
+		Aufschlag_Buero.setFont(new Font("Arial Black", Font.PLAIN, 16));
+		Aufschlag_Buero.setBackground(Color.GREEN);
+		Aufschlag_Buero.setBounds(538, 85, 105, 25);
+		frmSollUmsatzRechner.getContentPane().add(Aufschlag_Buero);
+		Aufschlag_Buero.setColumns(10);
 
 		Aufschlag_Kurzware = new JTextField();
 		Aufschlag_Kurzware.setHorizontalAlignment(SwingConstants.CENTER);
@@ -217,13 +217,13 @@ public class Umsatz implements ActionListener {
 		frmSollUmsatzRechner.getContentPane().add(Anteile_Wolle);
 		Anteile_Wolle.setColumns(10);
 
-		Anteile_Büro = new JTextField();
-		Anteile_Büro.setHorizontalAlignment(SwingConstants.CENTER);
-		Anteile_Büro.setFont(new Font("Arial Black", Font.PLAIN, 16));
-		Anteile_Büro.setBackground(Color.GREEN);
-		Anteile_Büro.setBounds(667, 85, 105, 25);
-		frmSollUmsatzRechner.getContentPane().add(Anteile_Büro);
-		Anteile_Büro.setColumns(10);
+		Anteile_Buero = new JTextField();
+		Anteile_Buero.setHorizontalAlignment(SwingConstants.CENTER);
+		Anteile_Buero.setFont(new Font("Arial Black", Font.PLAIN, 16));
+		Anteile_Buero.setBackground(Color.GREEN);
+		Anteile_Buero.setBounds(667, 85, 105, 25);
+		frmSollUmsatzRechner.getContentPane().add(Anteile_Buero);
+		Anteile_Buero.setColumns(10);
 
 		Anteile_Kurzware = new JTextField();
 		Anteile_Kurzware.setHorizontalAlignment(SwingConstants.CENTER);
@@ -369,35 +369,35 @@ public class Umsatz implements ActionListener {
 		Umsatz_kurz_Wo.setBounds(680, 467, 278, 29);
 		frmSollUmsatzRechner.getContentPane().add(Umsatz_kurz_Wo);
 
-		Umsatz_Büro_Woche = new JTextField();
-		Umsatz_Büro_Woche.setHorizontalAlignment(SwingConstants.CENTER);
-		Umsatz_Büro_Woche.setForeground(new Color(255, 255, 0));
-		Umsatz_Büro_Woche.setFont(new Font("Arial Black", Font.PLAIN, 14));
-		Umsatz_Büro_Woche.setEditable(false);
-		Umsatz_Büro_Woche.setBackground(new Color(255, 0, 255));
-		Umsatz_Büro_Woche.setColumns(10);
-		Umsatz_Büro_Woche.setBounds(327, 467, 316, 29);
-		frmSollUmsatzRechner.getContentPane().add(Umsatz_Büro_Woche);
+		Umsatz_Buero_Woche = new JTextField();
+		Umsatz_Buero_Woche.setHorizontalAlignment(SwingConstants.CENTER);
+		Umsatz_Buero_Woche.setForeground(new Color(255, 255, 0));
+		Umsatz_Buero_Woche.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		Umsatz_Buero_Woche.setEditable(false);
+		Umsatz_Buero_Woche.setBackground(new Color(255, 0, 255));
+		Umsatz_Buero_Woche.setColumns(10);
+		Umsatz_Buero_Woche.setBounds(327, 467, 316, 29);
+		frmSollUmsatzRechner.getContentPane().add(Umsatz_Buero_Woche);
 
-		Umsatz_Büro_Monat = new JTextField();
-		Umsatz_Büro_Monat.setHorizontalAlignment(SwingConstants.CENTER);
-		Umsatz_Büro_Monat.setEditable(false);
-		Umsatz_Büro_Monat.setForeground(new Color(255, 255, 0));
-		Umsatz_Büro_Monat.setFont(new Font("Arial Black", Font.PLAIN, 14));
-		Umsatz_Büro_Monat.setBackground(new Color(255, 0, 255));
-		Umsatz_Büro_Monat.setColumns(10);
-		Umsatz_Büro_Monat.setBounds(327, 427, 316, 29);
-		frmSollUmsatzRechner.getContentPane().add(Umsatz_Büro_Monat);
+		Umsatz_Buero_Monat = new JTextField();
+		Umsatz_Buero_Monat.setHorizontalAlignment(SwingConstants.CENTER);
+		Umsatz_Buero_Monat.setEditable(false);
+		Umsatz_Buero_Monat.setForeground(new Color(255, 255, 0));
+		Umsatz_Buero_Monat.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		Umsatz_Buero_Monat.setBackground(new Color(255, 0, 255));
+		Umsatz_Buero_Monat.setColumns(10);
+		Umsatz_Buero_Monat.setBounds(327, 427, 316, 29);
+		frmSollUmsatzRechner.getContentPane().add(Umsatz_Buero_Monat);
 
-		Umsatz_Büro_jahr = new JTextField();
-		Umsatz_Büro_jahr.setHorizontalAlignment(SwingConstants.CENTER);
-		Umsatz_Büro_jahr.setForeground(new Color(255, 255, 0));
-		Umsatz_Büro_jahr.setEditable(false);
-		Umsatz_Büro_jahr.setFont(new Font("Arial Black", Font.PLAIN, 14));
-		Umsatz_Büro_jahr.setBackground(new Color(255, 0, 255));
-		Umsatz_Büro_jahr.setColumns(10);
-		Umsatz_Büro_jahr.setBounds(327, 387, 316, 29);
-		frmSollUmsatzRechner.getContentPane().add(Umsatz_Büro_jahr);
+		Umsatz_Buero_jahr = new JTextField();
+		Umsatz_Buero_jahr.setHorizontalAlignment(SwingConstants.CENTER);
+		Umsatz_Buero_jahr.setForeground(new Color(255, 255, 0));
+		Umsatz_Buero_jahr.setEditable(false);
+		Umsatz_Buero_jahr.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		Umsatz_Buero_jahr.setBackground(new Color(255, 0, 255));
+		Umsatz_Buero_jahr.setColumns(10);
+		Umsatz_Buero_jahr.setBounds(327, 387, 316, 29);
+		frmSollUmsatzRechner.getContentPane().add(Umsatz_Buero_jahr);
 
 		Ums_Mo_JA = new JTextField();
 		Ums_Mo_JA.setHorizontalAlignment(SwingConstants.CENTER);
@@ -459,15 +459,15 @@ public class Umsatz implements ActionListener {
 		Gewinn_Kurzware.setBounds(578, 226, 231, 29);
 		frmSollUmsatzRechner.getContentPane().add(Gewinn_Kurzware);
 
-		Verkauf_Büro = new JTextField();
-		Verkauf_Büro.setEditable(false);
-		Verkauf_Büro.setHorizontalAlignment(SwingConstants.CENTER);
-		Verkauf_Büro.setForeground(new Color(255, 255, 0));
-		Verkauf_Büro.setFont(new Font("Arial Black", Font.PLAIN, 14));
-		Verkauf_Büro.setBackground(new Color(255, 0, 255));
-		Verkauf_Büro.setColumns(10);
-		Verkauf_Büro.setBounds(288, 312, 251, 29);
-		frmSollUmsatzRechner.getContentPane().add(Verkauf_Büro);
+		Verkauf_Buero = new JTextField();
+		Verkauf_Buero.setEditable(false);
+		Verkauf_Buero.setHorizontalAlignment(SwingConstants.CENTER);
+		Verkauf_Buero.setForeground(new Color(255, 255, 0));
+		Verkauf_Buero.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		Verkauf_Buero.setBackground(new Color(255, 0, 255));
+		Verkauf_Buero.setColumns(10);
+		Verkauf_Buero.setBounds(288, 312, 251, 29);
+		frmSollUmsatzRechner.getContentPane().add(Verkauf_Buero);
 
 		Einkauf_Buero = new JTextField();
 		Einkauf_Buero.setEditable(false);
@@ -529,15 +529,15 @@ public class Umsatz implements ActionListener {
 		Umsatz_Wo_Tag.setBounds(55, 507, 251, 29);
 		frmSollUmsatzRechner.getContentPane().add(Umsatz_Wo_Tag);
 
-		Umsatz_Büro_Tag = new JTextField();
-		Umsatz_Büro_Tag.setEditable(false);
-		Umsatz_Büro_Tag.setHorizontalAlignment(SwingConstants.CENTER);
-		Umsatz_Büro_Tag.setFont(new Font("Arial Black", Font.PLAIN, 14));
-		Umsatz_Büro_Tag.setForeground(new Color(255, 255, 0));
-		Umsatz_Büro_Tag.setBackground(new Color(255, 0, 255));
-		Umsatz_Büro_Tag.setColumns(10);
-		Umsatz_Büro_Tag.setBounds(327, 507, 316, 29);
-		frmSollUmsatzRechner.getContentPane().add(Umsatz_Büro_Tag);
+		Umsatz_Buero_Tag = new JTextField();
+		Umsatz_Buero_Tag.setEditable(false);
+		Umsatz_Buero_Tag.setHorizontalAlignment(SwingConstants.CENTER);
+		Umsatz_Buero_Tag.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		Umsatz_Buero_Tag.setForeground(new Color(255, 255, 0));
+		Umsatz_Buero_Tag.setBackground(new Color(255, 0, 255));
+		Umsatz_Buero_Tag.setColumns(10);
+		Umsatz_Buero_Tag.setBounds(327, 507, 316, 29);
+		frmSollUmsatzRechner.getContentPane().add(Umsatz_Buero_Tag);
 
 		Umsatz_Kurz_Tag = new JTextField();
 		Umsatz_Kurz_Tag.setHorizontalAlignment(SwingConstants.CENTER);
@@ -549,17 +549,18 @@ public class Umsatz implements ActionListener {
 		Umsatz_Kurz_Tag.setBounds(680, 507, 278, 29);
 		frmSollUmsatzRechner.getContentPane().add(Umsatz_Kurz_Tag);
 
-		JButton Zurücksetzten = new JButton("Reset");
-		Zurücksetzten.setForeground(new Color(255, 0, 255));
-		Zurücksetzten.setFont(new Font("Arial Black", Font.PLAIN, 16));
-		Zurücksetzten.setBackground(new Color(128, 255, 128));
-		Zurücksetzten.setBounds(929, 111, 119, 53);
-		Zurücksetzten.addActionListener(this);
-		frmSollUmsatzRechner.getContentPane().add(Zurücksetzten);
+		JButton Zuruecksetzen = new JButton("Reset");
+		Zuruecksetzen.setForeground(new Color(255, 0, 255));
+		Zuruecksetzen.setFont(new Font("Arial Black", Font.PLAIN, 16));
+		Zuruecksetzen.setBackground(new Color(128, 255, 128));
+		Zuruecksetzen.setBounds(929, 111, 119, 53);
+		Zuruecksetzen.addActionListener(this);
+		frmSollUmsatzRechner.getContentPane().add(Zuruecksetzen);
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		Error.setText("");
 		if (e.getActionCommand().equals("Berechne")) {
 			this.calculate();
 		} else if (e.getActionCommand().equals("Reset")) {
@@ -581,18 +582,18 @@ public class Umsatz implements ActionListener {
 		double anteilKurzware = 0;
 		double anteilBuero = 0;
 
-		Error.setText("");
+	
 
 		try {
 
 			ziel = Double.parseDouble(Zieleingabe.getText());
 			post = Double.parseDouble(Post_Eingabe.getText());
 			aufschlagWolle = Double.parseDouble(Aufschlag_Wolle.getText()) / 100.0;
-			aufschlagBuero = Double.parseDouble(Aufschlag_Büro.getText()) / 100.0;
+			aufschlagBuero = Double.parseDouble(Aufschlag_Buero.getText()) / 100.0;
 			aufschlagKurzware = Double.parseDouble(Aufschlag_Kurzware.getText()) / 100.0;
 			anteilWolle = Double.parseDouble(Anteile_Wolle.getText()) / 100.0;
 			anteilKurzware = Double.parseDouble(Anteile_Kurzware.getText()) / 100.0;
-			anteilBuero = Double.parseDouble(Anteile_Büro.getText()) / 100.0;
+			anteilBuero = Double.parseDouble(Anteile_Buero.getText()) / 100.0;
 
 		} catch (NumberFormatException e) {
 			Error.setText("Bitte nur Zahlen eingeben");
@@ -612,9 +613,9 @@ public class Umsatz implements ActionListener {
 		Gewinn_Wolle.setText(String.format("Gewinn Wolle %5.2f€", rechner.getWolle().getGewinn()));
 		Einkauf_Wolle.setText(String.format("Einkauf Wolle %5.2f€", rechner.getWolle().getEinkauf()));
 		Verkauf_Wolle.setText(String.format("Verkauf Wolle %5.2f€", rechner.getWolle().getVerkauf()));
-		Gewinn_Buero.setText(String.format("Gewinn Büromaterial %5.2f€", rechner.getBuero().getGewinn()));
-		Einkauf_Buero.setText(String.format("Einkauf Büromaterial %5.2f€", rechner.getBuero().getEinkauf()));
-		Verkauf_Büro.setText(String.format("Verkauf Büromaterial %5.2f€", rechner.getBuero().getVerkauf()));
+		Gewinn_Buero.setText(String.format("Gewinn Bueromaterial %5.2f€", rechner.getBuero().getGewinn()));
+		Einkauf_Buero.setText(String.format("Einkauf Bueromaterial %5.2f€", rechner.getBuero().getEinkauf()));
+		Verkauf_Buero.setText(String.format("Verkauf Bueromaterial %5.2f€", rechner.getBuero().getVerkauf()));
 		Gewinn_Kurzware.setText(String.format("Gewinn Kurzware %5.2f€", rechner.getKurzwaren().getGewinn()));
 		Einkauf_Kurzware.setText(String.format("Einkauf Kurzware %5.2f€", rechner.getKurzwaren().getEinkauf()));
 		Verkauf_Kurzware.setText(String.format("Verkauf Kurzware %5.2f€", rechner.getKurzwaren().getVerkauf()));
@@ -622,12 +623,12 @@ public class Umsatz implements ActionListener {
 		Umsatz_Mo_WOL.setText(String.format("Umsatz Wolle Monat %5.2f€", rechner.getWolle().getUmsatzMonat()));
 		Umsatz_Wo_WO.setText(String.format("Umsatz Wolle Woche %5.2f€", rechner.getWolle().getUmsatzWoche()));
 		Umsatz_Wo_Tag.setText(String.format("Umsatz Wolle Tag %5.2f€", rechner.getWolle().getUmsatzTag()));
-		Umsatz_Büro_jahr.setText(String.format("Umsatz Büromaterial Jahr %5.2f€", rechner.getBuero().getUmsatzJahr()));
-		Umsatz_Büro_Monat
-				.setText(String.format("Umsatz Büromaterial Monat %5.2f€", rechner.getBuero().getUmsatzMonat()));
-		Umsatz_Büro_Woche
-				.setText(String.format("Umsatz Büromaterial Woche %5.2f€", rechner.getBuero().getUmsatzWoche()));
-		Umsatz_Büro_Tag.setText(String.format("Umsatz Büromaterial Tag %5.2f€", rechner.getBuero().getUmsatzTag()));
+		Umsatz_Buero_jahr.setText(String.format("Umsatz Bueromaterial Jahr %5.2f€", rechner.getBuero().getUmsatzJahr()));
+		Umsatz_Buero_Monat
+				.setText(String.format("Umsatz Bueromaterial Monat %5.2f€", rechner.getBuero().getUmsatzMonat()));
+		Umsatz_Buero_Woche
+				.setText(String.format("Umsatz Bueromaterial Woche %5.2f€", rechner.getBuero().getUmsatzWoche()));
+		Umsatz_Buero_Tag.setText(String.format("Umsatz Bueromaterial Tag %5.2f€", rechner.getBuero().getUmsatzTag()));
 		Umsatz_Kurz_Jahr.setText(String.format("Umsatz Kurzware Jahr %5.2f€", rechner.getKurzwaren().getUmsatzJahr()));
 		Umsatz_kurz_Mo.setText(String.format("Umsatz Kurzware Monat %5.2f€", rechner.getKurzwaren().getUmsatzMonat()));
 		Umsatz_kurz_Wo.setText(String.format("Umsatz Kurzware Woche %5.2f€", rechner.getKurzwaren().getUmsatzWoche()));
@@ -639,11 +640,11 @@ public class Umsatz implements ActionListener {
 		Zieleingabe.setText("");
 		Post_Eingabe.setText("");
 		Aufschlag_Wolle.setText("");
-		Aufschlag_Büro.setText("");
+		Aufschlag_Buero.setText("");
 		Aufschlag_Kurzware.setText("");
 		Anteile_Wolle.setText("");
 		Anteile_Kurzware.setText("");
-		Anteile_Büro.setText("");
+		Anteile_Buero.setText("");
 		Ausgabe_Rest.setText("");
 		Ausgaben_Umsatz_Monat.setText("");
 		Ausgabe_Umsatz_Jahr.setText("");
@@ -655,7 +656,7 @@ public class Umsatz implements ActionListener {
 		Verkauf_Wolle.setText("");
 		Gewinn_Buero.setText("");
 		Einkauf_Buero.setText("");
-		Verkauf_Büro.setText("");
+		Verkauf_Buero.setText("");
 		Gewinn_Kurzware.setText("");
 		Einkauf_Kurzware.setText("");
 		Verkauf_Kurzware.setText("");
@@ -663,10 +664,10 @@ public class Umsatz implements ActionListener {
 		Umsatz_Mo_WOL.setText("");
 		Umsatz_Wo_WO.setText("");
 		Umsatz_Wo_Tag.setText("");
-		Umsatz_Büro_jahr.setText("");
-		Umsatz_Büro_Monat.setText("");
-		Umsatz_Büro_Woche.setText("");
-		Umsatz_Büro_Tag.setText("");
+		Umsatz_Buero_jahr.setText("");
+		Umsatz_Buero_Monat.setText("");
+		Umsatz_Buero_Woche.setText("");
+		Umsatz_Buero_Tag.setText("");
 		Umsatz_Kurz_Jahr.setText("");
 		Umsatz_kurz_Mo.setText("");
 		Umsatz_kurz_Wo.setText("");
