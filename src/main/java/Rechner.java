@@ -20,7 +20,7 @@ public class Rechner {
         umsatzMonat = kurzwaren.getUmsatzMonat() + buero.getUmsatzMonat() + wolle.getUmsatzMonat();
         umsatzWoche = kurzwaren.getUmsatzWoche() + buero.getUmsatzWoche() + wolle.getUmsatzWoche();
         umsatzJahr = kurzwaren.getUmsatzJahr() + buero.getUmsatzJahr() + wolle.getUmsatzJahr();
-        umsatzTag = kurzwaren.getUmsatzTag() + buero.getUmsatzTag() + wolle.getUmsatzJahr();
+        umsatzTag = kurzwaren.getUmsatzTag() + buero.getUmsatzTag() + wolle.getUmsatzTag();
     }
 
     public double getRest() {

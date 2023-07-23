@@ -40,6 +40,7 @@ public class Umsatz implements ActionListener {
 	private JTextField Post_Eingabe;
 	private JTextField Ausgabe_Rest;
 	private JTextField Melanie;
+	private JTextField Error;
 
 	/**
 	 * Launch the application.
@@ -209,7 +210,6 @@ public class Umsatz implements ActionListener {
 		Anteile_Kurzware.setColumns(10);
 		
 		JButton Berechne = new JButton("Berechne");
-		Berechne.setEnabled(false);
 		Berechne.setForeground(new Color(0, 0, 0));
 		Berechne.setBackground(new Color(0, 255, 0));
 		Berechne.setBounds(33, 220, 119, 53);
@@ -333,6 +333,16 @@ public class Umsatz implements ActionListener {
 		Melanie.setBounds(494, 304, 86, 20);
 		frmSollUmsatzRechner.getContentPane().add(Melanie);
 		Melanie.setColumns(10);
+		
+		Error = new JTextField();
+		Error.setForeground(new Color(128, 255, 0));
+		Error.setHorizontalAlignment(SwingConstants.CENTER);
+		Error.setFont(new Font("Arial Black", Font.PLAIN, 16));
+		Error.setBackground(new Color(255, 0, 255));
+		Error.setEditable(false);
+		Error.setBounds(104, 130, 368, 50);
+		frmSollUmsatzRechner.getContentPane().add(Error);
+		Error.setColumns(10);
 	}
 
 	@Override
@@ -342,32 +352,41 @@ public class Umsatz implements ActionListener {
 
 	private void calculate() {
 		
+		double ziel = 0;
+		double post = 0;
+		double aufschlagWolle = 0;
+		double aufschlagBuero = 0 ;
+		double aufschlagKurzware = 0;
+		double anteilWolle = 0;
+		double anteilKurzware = 0;
+		double anteilBuero = 0;
 		
-
-		double ziel = Double.parseDouble(Zieleingabe.getText());
-		double post = Double.parseDouble(Post_Eingabe.getText());
-		double aufschlagWolle = Double.parseDouble(Aufschlag_Wolle.getText());
-		double aufschlagBuero = Double.parseDouble(Aufschlag_Büro.getText());
-		double aufschlagKurzware = Double.parseDouble(Aufschlag_Kurzware.getText());
-		double anteilWolle = Double.parseDouble(Anteile_Wolle.getText());
-		double anteilKurzware = Double.parseDouble(Anteile_Kurzware.getText());
-		double anteilBuero = Double.parseDouble(Anteile_Büro.getText());
+	try {
 		
+		 ziel = Double.parseDouble(Zieleingabe.getText());
+		 post = Double.parseDouble(Post_Eingabe.getText());
+		 aufschlagWolle = Double.parseDouble(Aufschlag_Wolle.getText()) / 100.0;
+		 aufschlagBuero = Double.parseDouble(Aufschlag_Büro.getText()) / 100.0;
+		 aufschlagKurzware = Double.parseDouble(Aufschlag_Kurzware.getText()) / 100.0;
+		 anteilWolle = Double.parseDouble(Anteile_Wolle.getText()) / 100.0;
+		 anteilKurzware = Double.parseDouble(Anteile_Kurzware.getText()) / 100.0;
+		 anteilBuero = Double.parseDouble(Anteile_Büro.getText()) / 100.0;
 		
+	} catch (NumberFormatException e) {
+		Error.setText("Bitte nur Zahlen eingeben");
+	}
+		
+	
 
 		 Rechner rechner = new Rechner();
 		 rechner.berechne(ziel, post, aufschlagWolle, aufschlagBuero, aufschlagKurzware, anteilWolle, anteilBuero, anteilKurzware );
 
         Ausgabe_Rest.setText(""+rechner.getRest());
-
-	 
+        Ausgaben_Umsatz_Monat.setText(""+rechner.getUmsatzMonat());
+        Ausgabe_Umsatz_Jahr.setText(""+rechner.getUmsatzJahr());
+        Ausgabe_Umsatz_Woche.setText(String.format("%5.2f", rechner.getUmsatzWoche()));
+        Ausgabe_Umsatz_Tag.setText(String.format("%5.2f", rechner.getUmsatzTag()));
 	 
 	}
-}
-
-	 
-	
-	
-	
-	
+	}
 
