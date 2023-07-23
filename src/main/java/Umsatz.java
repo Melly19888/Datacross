@@ -100,7 +100,7 @@ public class Umsatz implements ActionListener {
 
 		Ziel = new JTextField();
 		Ziel.setEditable(false);
-		Ziel.setForeground(new Color(255, 255, 0));
+		Ziel.setForeground(new Color(0, 0, 160));
 		Ziel.setHorizontalAlignment(SwingConstants.CENTER);
 		Ziel.setFont(new Font("Arial Black", Font.PLAIN, 16));
 		Ziel.setBackground(new Color(255, 0, 255));
@@ -111,7 +111,7 @@ public class Umsatz implements ActionListener {
 
 		Post = new JTextField();
 		Post.setEditable(false);
-		Post.setForeground(new Color(255, 255, 0));
+		Post.setForeground(new Color(0, 0, 160));
 		Post.setHorizontalAlignment(SwingConstants.CENTER);
 		Post.setFont(new Font("Arial Black", Font.PLAIN, 16));
 		Post.setBackground(new Color(255, 0, 255));
@@ -122,7 +122,7 @@ public class Umsatz implements ActionListener {
 
 		Rest = new JTextField();
 		Rest.setEditable(false);
-		Rest.setForeground(new Color(255, 255, 0));
+		Rest.setForeground(new Color(0, 0, 160));
 		Rest.setHorizontalAlignment(SwingConstants.CENTER);
 		Rest.setFont(new Font("Arial Black", Font.PLAIN, 16));
 		Rest.setBackground(new Color(255, 0, 255));
@@ -133,7 +133,7 @@ public class Umsatz implements ActionListener {
 
 		Anteile = new JTextField();
 		Anteile.setEditable(false);
-		Anteile.setForeground(new Color(255, 255, 0));
+		Anteile.setForeground(new Color(0, 0, 160));
 		Anteile.setHorizontalAlignment(SwingConstants.CENTER);
 		Anteile.setFont(new Font("Arial Black", Font.BOLD, 14));
 		Anteile.setBackground(Color.MAGENTA);
@@ -144,7 +144,7 @@ public class Umsatz implements ActionListener {
 
 		Aufschlag = new JTextField();
 		Aufschlag.setEditable(false);
-		Aufschlag.setForeground(new Color(255, 255, 0));
+		Aufschlag.setForeground(new Color(0, 0, 160));
 		Aufschlag.setFont(new Font("Arial Black", Font.BOLD, 14));
 		Aufschlag.setBackground(Color.MAGENTA);
 		Aufschlag.setText("Aufschlag %");
@@ -154,7 +154,7 @@ public class Umsatz implements ActionListener {
 
 		Wolle = new JTextField();
 		Wolle.setEditable(false);
-		Wolle.setForeground(new Color(255, 255, 0));
+		Wolle.setForeground(new Color(0, 0, 160));
 		Wolle.setHorizontalAlignment(SwingConstants.CENTER);
 		Wolle.setFont(new Font("Arial Black", Font.PLAIN, 16));
 		Wolle.setBackground(new Color(255, 0, 255));
@@ -165,7 +165,7 @@ public class Umsatz implements ActionListener {
 
 		Buero = new JTextField();
 		Buero.setEditable(false);
-		Buero.setForeground(new Color(255, 255, 0));
+		Buero.setForeground(new Color(0, 0, 160));
 		Buero.setFont(new Font("Arial Black", Font.PLAIN, 16));
 		Buero.setBackground(new Color(255, 0, 255));
 		Buero.setHorizontalAlignment(SwingConstants.CENTER);
@@ -176,7 +176,7 @@ public class Umsatz implements ActionListener {
 
 		Kurzware = new JTextField();
 		Kurzware.setEditable(false);
-		Kurzware.setForeground(new Color(255, 255, 0));
+		Kurzware.setForeground(new Color(0, 0, 160));
 		Kurzware.setHorizontalAlignment(SwingConstants.CENTER);
 		Kurzware.setFont(new Font("Arial Black", Font.PLAIN, 15));
 		Kurzware.setBackground(new Color(255, 0, 255));
@@ -235,7 +235,7 @@ public class Umsatz implements ActionListener {
 
 		JButton Berechne = new JButton("Berechne");
 		Berechne.setFont(new Font("Arial Black", Font.PLAIN, 16));
-		Berechne.setForeground(new Color(255, 0, 255));
+		Berechne.setForeground(new Color(0, 0, 160));
 		Berechne.setBackground(new Color(128, 255, 128));
 		Berechne.setBounds(929, 35, 119, 53);
 		Berechne.addActionListener(this);
@@ -550,7 +550,7 @@ public class Umsatz implements ActionListener {
 		frmSollUmsatzRechner.getContentPane().add(Umsatz_Kurz_Tag);
 
 		JButton Zuruecksetzen = new JButton("Reset");
-		Zuruecksetzen.setForeground(new Color(255, 0, 255));
+		Zuruecksetzen.setForeground(new Color(0, 0, 160));
 		Zuruecksetzen.setFont(new Font("Arial Black", Font.PLAIN, 16));
 		Zuruecksetzen.setBackground(new Color(128, 255, 128));
 		Zuruecksetzen.setBounds(929, 111, 119, 53);
